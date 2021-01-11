@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="browsertest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.201">
+  <properties />
+  
+  
+            <testcase name="getToken" time="2.201" classname="com.demo.test.testcase.Case" />
+      
+</testsuite>

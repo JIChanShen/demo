@@ -1,0 +1,16 @@
+{
+  "driverinfo": {
+    "driver": [
+      {
+        "name": "chrome",
+        "packagePath": "org.openqa.selenium.chrome.ChromeDriver",
+        "propertyKey": "webdriver.chrome.driver",
+        "driverDirctory": "/driver/chromedriver.exe"
+      },{
+        "name": "firefox",
+        "packagePath": "org.openqa.selenium.firefox.FirefoxDriver",
+        "propertyKey": "webdriver.firefox.bin",
+        "driverDirctory": "/driver/firefox.exe"
+      }]
+  }
+}

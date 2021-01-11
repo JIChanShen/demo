@@ -1,0 +1,9 @@
+com\demo\util\mail\SendMail.class
+com\demo\util\base\ReadProperties.class
+com\demo\util\extentx\ExtentTestNGITestListener.class
+com\demo\util\mail\ReadHtml.class
+com\demo\util\mail\AutoMail.class
+com\demo\util\mail\MyAuthenticator.class
+com\demo\util\extentx\ExtentManager.class
+com\demo\util\mail\MailInfo.class
+com\demo\util\extentx\MainRun.class
