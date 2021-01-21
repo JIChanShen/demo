@@ -1,9 +1,9 @@
 D:\project\demo\src\main\java\com\demo\util\base\ReadProperties.java
 D:\project\demo\src\main\java\com\demo\util\extentx\ExtentTestNGITestListener.java
+D:\project\demo\src\main\java\com\demo\util\log\Log.java
 D:\project\demo\src\main\java\com\demo\util\mail\MailInfo.java
 D:\project\demo\src\main\java\com\demo\util\mail\ReadHtml.java
 D:\project\demo\src\main\java\com\demo\util\mail\AutoMail.java
-D:\project\demo\src\main\java\com\demo\util\extentx\MainRun.java
 D:\project\demo\src\main\java\com\demo\util\mail\MyAuthenticator.java
 D:\project\demo\src\main\java\com\demo\util\extentx\ExtentManager.java
 D:\project\demo\src\main\java\com\demo\util\mail\SendMail.java

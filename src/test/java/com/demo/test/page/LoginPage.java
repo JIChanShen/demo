@@ -1,6 +1,6 @@
 package com.demo.test.page;
 
-import com.demo.test.util.driver.Client;
+import com.demo.test.util.Client;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

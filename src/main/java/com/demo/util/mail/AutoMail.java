@@ -30,8 +30,9 @@ public class AutoMail {
 		String cssvalue=ReadHtml.readString("./target/surefire-reports/html/reportng.css");
 		String changestr="<style type=\"text/css\">h1 {display : inline}"+cssvalue+"</style>";
 		mailcontent=mailcontent.replace("<link href=\"reportng.css\" rel=\"stylesheet\" type=\"text/css\" />", changestr);
-		String logostr="<h1 style=\"color:red ; font-size:50px;font-family: '楷体','楷体_GB2312';\">demoProject</h1><h1>自动化测试报告</h1>";
+		String logostr="<h1 style=\"color:red ; font-size:50px;font-family: '微软雅黑','utf-8';\">demoProject</h1><h1>自动化测试报告</h1>";
 		mailcontent=mailcontent.replace("<h1>Test Results Report</h1>", logostr);
+		System.out.println(logostr);
 		mailInfo.setContent(mailcontent);
 		SendMail.sendHtmlMail(mailInfo);// 发送html格式邮件
 		

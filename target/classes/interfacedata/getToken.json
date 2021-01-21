@@ -1,0 +1,21 @@
+{
+  "interfaceInfo": {
+    "name": "getToken",
+    "url": "",
+    "paramInfo": [
+      {
+        "assert": "true",
+        "corpid": "ww04c2a06e22bcc5a7",
+        "corpsecret": "4M8-QGRUzKDTdh0SWLGvUb_RqF1KWu-rgHB8PsF9UZ4"
+      }, {
+        "assert": "false",
+        "corpid": "ww04c2a06e22bcc5a7",
+        "corpsecret": "4M8-QGRUzKDTdh0SWLGvUb_RqF1KWu-rgHB8PsF9UZ4"
+      }
+    ]
+  }
+}
+
+
+
+

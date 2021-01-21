@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class Case {
+public class InterfaceCase {
     @Test
     public void getToken(){
         String result = RestAssured.given()
@@ -21,6 +21,6 @@ public class Case {
     }
 
     public static void main(String[] args){
-        System.out.println(Case.class.getResource("").getPath());
+        System.out.println(InterfaceCase.class.getResource("").getPath());
     }
 }

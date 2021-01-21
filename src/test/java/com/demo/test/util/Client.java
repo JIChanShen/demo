@@ -1,4 +1,5 @@
-package com.demo.test.util.driver;
+package com.demo.test.util;
+import com.demo.util.log.Log;
 import com.jayway.jsonpath.JsonPath;
 import net.minidev.json.JSONArray;
 import org.openqa.selenium.Alert;
@@ -10,13 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 封装driver工具，用来操作浏览器
+ */
 public class Client {
-    public static void main(String[] args){
-        Client.openClient("chrome");
-    }
+    public static ArrayList<WebDriver> driverList = new ArrayList();
 
     /**
      * 打开浏览器客户端，传参为浏览器名称
@@ -83,11 +86,19 @@ public class Client {
     }
 
     /**
-     * 关闭driver
+     * 关闭窗口
      * @param driver
      */
     public static void close(WebDriver driver){
         driver.close();
+    }
+
+    /**
+     * 关闭所有窗口，关闭driver进程
+     * @param driver
+     */
+    public static void quit(WebDriver driver){
+        driver.quit();
     }
 
     /**
@@ -133,6 +144,23 @@ public class Client {
     private static String jsonArrayToString(String json,String path){
         JSONArray content = JsonPath.parse(json).read(path);
         return content.get(0).toString();
+    }
+
+    /**
+     * 关闭所有driver
+     * @param confirm
+     */
+    public static void quitAll(boolean confirm){
+        try{
+            if(confirm){
+                for(WebDriver driver : driverList){
+                    driver.quit();
+                }
+            }
+        }catch(Exception e){
+            Log.error("关闭失败");
+        }
+
     }
 
 
