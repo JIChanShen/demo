@@ -3,13 +3,19 @@
 <suite name="Maven_Test" parallel="tests" thread-count="1">
     <test name="interfaceDemo">
         <classes>
-            <class name="com.demo.test.testcase.InterfaceCase"></class>
+            <class name="com.demo.test.testcase.InterfaceCase">
+            </class>
 
         </classes>
     </test>
     <test name="selDemo">
         <classes>
             <class name="com.demo.test.testcase.SelCase">
+                <methods>
+                    <include name="loginSuccess"></include>
+                    <include name="loginFalse"></include>
+                    <include name="fail"></include>
+                </methods>
             </class>
         </classes>
     </test>

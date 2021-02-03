@@ -1,7 +1,6 @@
 package com.demo.test.util;
 
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -21,3 +20,4 @@ public class AppiumClient {
         }
     }
 }
+

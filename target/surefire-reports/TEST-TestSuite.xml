@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="5.37" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="21.019" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\developmentTool\java\jdk\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="D:\developmentTool\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\developmentTool\java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\developmentTool\cmder\vendor\bin;D:\developmentTool\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\developmentTool\cmder\vendor\conemu-maximus5;D:\developmentTool\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\developmentTool\java\jdk\bin;D:\developmentTool\Git\cmd;D:\developmentTool\nodejs\;C:\Users\jirc\AppData\Local\Microsoft\WindowsApps;D:\developmentTool\IntelliJ IDEA Community Edition 2020.1.3\bin;C:\Users\jirc\AppData\Local\Programs\Fiddler;D:\developmentTool\PyCharm Community Edition 2020.3.2\bin;C:\Users\jirc\AppData\Roaming\npm;D:\developmentTool\apache-maven-3.6.3\bin;D:\developmentTool\Git\mingw64\bin;D:\developmentTool\Git\usr\bin;D:\developmentTool\cmder;."/>
+    <property name="java.library.path" value="D:\developmentTool\java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\developmentTool\cmder\vendor\bin;D:\developmentTool\cmder\vendor\conemu-maximus5\ConEmu\Scripts;D:\developmentTool\cmder\vendor\conemu-maximus5;D:\developmentTool\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\developmentTool\java\jdk\bin;D:\developmentTool\Git\cmd;D:\developmentTool\SDKManage\tools;D:\developmentTool\SDKManage\platform-tools;D:\developmentTool\nvm;C:\Program Files\nodejs;D:\developmentTool\nodejs\;C:\Users\jirc\AppData\Local\Microsoft\WindowsApps;D:\developmentTool\IntelliJ IDEA Community Edition 2020.1.3\bin;C:\Users\jirc\AppData\Local\Programs\Fiddler;D:\developmentTool\PyCharm Community Edition 2020.3.2\bin;D:\developmentTool\apache-maven-3.6.3\bin;D:\developmentTool\nvm;C:\Program Files\nodejs;C:\Users\jirc\AppData\Roaming\npm;D:\developmentTool\Microsoft VS Code\bin;D:\developmentTool\Git\mingw64\bin;D:\developmentTool\Git\usr\bin;D:\developmentTool\cmder;."/>
     <property name="maven.conf" value="D:\developmentTool\apache-maven-3.6.3\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -64,5 +64,12 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="getToken" classname="com.demo.test.testcase.InterfaceCase" time="3.313"/>
+  <testcase name="getToken" classname="com.demo.test.testcase.InterfaceCase" time="2.367"/>
+  <testcase name="loginSuccess" classname="com.demo.test.testcase.SelCase" time="1.528"/>
+  <testcase name="loginFalse" classname="com.demo.test.testcase.SelCase" time="8.032"/>
+  <testcase name="fail" classname="com.demo.test.testcase.SelCase" time="0.016">
+    <failure message="expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at com.demo.test.testcase.SelCase.fail(SelCase.java:39)
+</failure>
+  </testcase>
 </testsuite>

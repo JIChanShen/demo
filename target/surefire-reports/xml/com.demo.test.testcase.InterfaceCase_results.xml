@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="selDemo"
+<testsuite name="interfaceDemo"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="3.266">
+           time="2.348">
   <properties />
   
   
-            <testcase name="getToken" time="3.266" classname="com.demo.test.testcase.InterfaceCase" />
+            <testcase name="getToken" time="2.348" classname="com.demo.test.testcase.InterfaceCase" />
       
 </testsuite>

@@ -1,17 +1,14 @@
 package com.demo.test.service;
 
 import com.jayway.jsonpath.JsonPath;
-import io.restassured.RestAssured;
-
-import static org.hamcrest.Matchers.equalTo;
 
 /**
  * 封装getToken接口
  */
-public class GetToekn {
+public class GetToken {
     public static String getToken(){
         String interfaceInfo = JsonPath.parse(
-                GetToekn.class.getResource("/interfacedata/getToken.json").getPath()
+                GetToken.class.getResource("/interfacedata/getToken.json").getPath()
         ).read("$..interfaceInfo");
 
         System.out.println(interfaceInfo);
@@ -31,6 +28,6 @@ public class GetToekn {
     }
 
     public static void main(String[] args){
-        GetToekn.getToken();
+        GetToken.getToken();
     }
 }
